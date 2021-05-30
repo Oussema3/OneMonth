@@ -1,0 +1,17 @@
+One unique thing about Python is its use of whitespace as part of its syntax. Most programming languages use braces to denote blocks of code, but in Python you use whitespace. Watch this video and learn more!
+
+Spaces vs. Tabs
+Spaces and tabs are really important in Python.
+
+To tab, you can either hit the tab key or hit the space bar four times. BUT,  you'er only allowed to do them one way.
+
+Use this Sublime Text customization and to make your life a lot easier.
+
+Go to File > Preferences > Settings – User and make it look like this:
+
+{
+
+"translate_tabs_to_spaces": true
+
+}
+
