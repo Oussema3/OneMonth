@@ -1,0 +1,11 @@
+In this lesson, we look at Python logical operators. The most popular ones you need to know are: and, or , not, ==, !=, >, and <. You'll also learn how to determine if a value is either True or False.
+
+Logic Operators
+The most popular truth terms in Python are: and, or , not, ==, !=, >, and <.
+
+There's also in, which is a way of putting strings or variables together. As in:
+
+$ python
+>>> people = ["Mattan", "Chris", "Sarah"]
+>>> "Mattan" in people
+True
