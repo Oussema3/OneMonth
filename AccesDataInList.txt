@@ -1,0 +1,8 @@
+Here, we look at ways we can access list items as well as ways we can get other useful information about a list and its items. You will find out how to access individual items inside a list using an index (sequentially as well as in reverse order), and how to find the "length" of a list.
+Note two things:
+
+The position of things in a list starts at 0, so to get the first thing you do [0].
+You can go backwards through the list using negative numbers. The last thing in a list is always [-1].
+There's also the function type() which will tell you what kind of thing anything is.
+
+Now, when you're pulling things out of a list, you can also go backwards. So if you were to type another_list = random_things[-1], then you'd get the list at the very end of our list of random things.
