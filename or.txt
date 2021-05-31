@@ -1,0 +1,14 @@
+In this lesson, we introduce the "or" logical operator. This operator returns True if at least one of the expressions it's evaluating return True, otherwise, it returns False. You will learn some rules regarding the order in which it evaluates expressions—knowing this could save you from some logical bugs in your code.
+
+The "or" operator
+In if.py:
+
+answer = input("Do you want to hear a joke? ")
+
+if answer == "Yes" or answer == "yes":
+    print("I'm against picketing, but I don't know how to show it.")
+        # Mitch Hedberg (RIP)
+	elif answer == "No" or answer == "no" :
+	    print("Fine.")
+	    else:
+	        print("I don't understand.")
