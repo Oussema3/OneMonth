@@ -1,0 +1,19 @@
+In this lesson, we look at Python dictionaries. A dictionary is an unordered, changeable and indexed collection that doesn't allow for duplicate members. It is similar to a list, in that it is a collection of objects, but the main difference between the two is that a list is ordered while a dictionary isn't.
+
+We already have a lot of different data types, but dictionaries are super important in order to do a lot of really useful things in Python. Dictionaries are basically lists - but lists go in order. With dictionaries, we use can look up something using a special key (basically a string).
+
+Searching a dictionary
+To pull out the value from a dictionary, we simply print the key.
+
+If you try to access something that isn't in the dictionary, you'll get a key error. And if you ever get confused about what something is - a dictionary or a list - you can always use the type() function.
+
+You can search for things in dictionaries using .get(). It lets you look something up without returning a key error.
+
+You're also able to get all the keys in a given dictionary by printing .keys().
+
+Adding things to a dictionary is actually pretty easy. And that will set the key, even if it doesn't already exist.
+
+Dictionaries are super useful to specify the information. Compare the list, which is commented out, with the dictionary, which keeps track of Mattan's details in a much more robust way:
+
+# user = ['Mattan', 70, 10.5, 'Brown', 'Brown']
+user = {'name': 'Mattan', 'height': 70, 'shoe size': 10.5, 'hair': 'Brown', 'eyes': 'Brown'}
