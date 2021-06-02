@@ -1,0 +1,26 @@
+To analyze data, we are going to need to learn pandas —an open source Python Data Analysis Library. In this pandas tutorial, we'll import data, and then you'll learn Python best-practices for parsing and structuring data.
+
+So now, let's explore some of what Jupyter Notebook can do. Open Jupyter Notebook with the command:
+
+$ jupyter notebook
+Once you've got it open:
+
+Click "New" and create a new file named data_analysis_intro
+
+We'll start by adding some text in markdown (if you want to learn more about markdown, here's a handy-dandy markdown cheat sheet). Once we've typed our header: #Import Pandas, we can go out and get pandas.... the Python data analysis library, not the endangered animal.
+
+Shift+Enter will run the file.
+
+Now that we have pandas, we'll create another section called # Importing Data. From there, you can take the data file of imdb top films and pass it through Pandas.
+pd.read_csv('imdb_top_10000.txt')
+Now, you'll note that pandas has specified a csv (comma separated value) file, which is basically like an excel sheet. Our imdb file is a .txt file separated by tabs, so you'll have to specify the separator. To do this, you can simply add sep="\t"
+
+pd.read_csv('imdb_top_10000.txt', sep="\t")
+ Now, =when you run it, you should see a table of films.
+
+Next step for this particular file is to add headers for our table:
+We can also tailor our columns so that the first one we see is our id column,
+Now that we have a table just the way we like it, we can call it data = and keep going!
+
+names = ['id','title','year','rating','votes','length','genres']
+data = pd.read_csv('imdb_top_10000.txt', sep="\t", names=names, index_col=0)
