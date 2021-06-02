@@ -1,3 +1,0 @@
- Python is widely used in such fields as Data Science and Machine Learning. This is one of the reasons it is so popular. We're going to be doing our data analysis work with a program called Jupyter Notebook. It comes with the Python installer, so you should already have it installed.
-
-We're going to be doing our data analysis work through a program called Jupyter Notebook. Good news, you already have Jupyter Notebook on your computer because it came with our Python installer! So we're all ready to go.
