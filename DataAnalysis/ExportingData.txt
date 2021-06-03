@@ -1,0 +1,15 @@
+Pandas enables you to export data to a file. You can configure how you want the data saved by specifying such settings as the file name, file type (e.g. .csv or .txt), separators (CSV files use commas), etc.
+
+Let's create another markdown column # Exporting Data, and explore how exporting works.
+
+The function we run to export data is data.to_csv('filename'), where 'filename' is the name of the file you want to save your data as.
+
+You can specify farther for your header, index, and separators (remember csv files are separated by commas).
+
+
+
+data.to_csv('test.csv', header=True, index=True, sep=',')
+
+
+You now have a file you've converted a .txt file to a .csv file. Which is pretty cool. But with Python, we can do all sorts of other things to our data as well.
+
