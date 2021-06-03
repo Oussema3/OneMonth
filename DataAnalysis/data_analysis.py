@@ -31,3 +31,20 @@ data.to_csv("test.csv", header=True , index=True, sep=',')
 data1 = data.sort_values(by='rating', ascending = False)
 # now exprot this sorted data to another file
 data1.to_csv("SortedTest.csv", header=True, index= True, sep=',')
+
+
+#we can creat a data frame
+
+data3= {
+    tv : ["230", "12", "450","16"]
+    news : ["45", "58", "96", "19"]
+    radio = ["15","18","486","563"]
+    sales = ["86","519","486","99"]
+    }
+
+data3= pd.DataFrame(sample_data)
+
+#print it
+""" 
+data3
+"""
