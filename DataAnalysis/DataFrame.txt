@@ -1,0 +1,21 @@
+So far, we've been using a data structure from the Pandas library called a DataFrame. According to the documentation, a DataFrame is a two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). In simpler words, DataFrames are the tables we see when pandas runs our data. Underneath, a DataFrame is just a Python dictionary with lists inside of it. We look at how to create a DataFrame from scratch.
+
+The tables that we see when pandas runs our data are called data frames. But all data frames really are, is a Python dictionary with lists inside of it. You can create data frames from scratch if you want. Like, say, this one:
+
+Create a dictionary
+sample_data = {
+   'tv': [230.1, 44.5, 17.2],
+      'radio': [37.8, 39.3, 45.9],
+         'news': [69.2, 45.1, 69.3],
+	    'sales': [22.1, 10.4, 9.3]
+	    }
+
+Pass in sample_data
+data2 = pd.DataFrame(sample_data)
+Display the new data
+data2
+Remember, its not in order because dictionaries do not guarantee an order
+
+If you want to delete the data2 frame?
+
+del data2
