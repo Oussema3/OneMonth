@@ -1,0 +1,13 @@
+Once we've evaluated our data, it can be useful to plot it and have it in a more visual form. In this lesson, we use the Matplotlib library to do this. Matplotlib is a Python 2D plotting library which produces figures in a variety of formats. With Matplotlib, you can easily generate plots, histograms, boxplots, power spectra, bar charts, pie charts, error charts, scatterplots, etc.
+
+One of the more popular Python plotting libraries is Matplotlib. There are all sorts of formatting we could get into, but that would be a whole other class. For now, let's start by enabling Matplotlib in Jupyter Notebook by entering the command:
+
+%matplotlib inline
+ Then, if we want to plot our data, it'll default to this:
+ That gives an image that we can save and send to someone, which is pretty cool. But, this graph doesn't tell us all that much, so we can do some other types of plotting. For instance, we can grab a scatter plot with:
+
+data.plot(kind='scatter', x='rating', y='votes')
+ If you look at the Pandas documentation, you'll find all the different variations you could create.
+
+### PANDAS DOCUMENTATION ###
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html
