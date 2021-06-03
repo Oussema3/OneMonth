@@ -1,0 +1,10 @@
+Let's learn how to sort our data. For this, you use the data.sort_values(by='') function. Whatever is between the quotes represents the column you want to sort by. You can also specify the order you want the sorted data in by passing in an argument: ascending=False or ascending=True.
+
+There's an easy function that will help us sort our data: data.sort_values(by='')- with whatever is in between quotes representing a column we want to work with. If we were to run sort by rating, our table would display starting with the lowest ratings.
+
+If we wanted to look at the highest rating first, we would have to add the argument:
+######
+
+data.sort_values(by='rating', ascending=False)
+
+#####
