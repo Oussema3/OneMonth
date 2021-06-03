@@ -21,3 +21,6 @@ data.info()
 # go throuth the data and gives a lot of usefull discription to the data 
 data.describe()
 
+""" we can also export data to another file using the pandas library """
+
+data.to_csv("test.csv", header=True , index=True, sep=',')
