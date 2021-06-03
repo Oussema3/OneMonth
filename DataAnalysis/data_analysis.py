@@ -24,3 +24,10 @@ data.describe()
 """ we can also export data to another file using the pandas library """
 
 data.to_csv("test.csv", header=True , index=True, sep=',')
+
+
+"""we can sort data as show the next line of code """
+""" this line will print data sorted from the biggest value to the lowest , however if u dnt set the ascending to Flase it will generate it automatcally from the lowest to the highest"""
+data1 = data.sort_values(by='rating', ascending = False)
+# now exprot this sorted data to another file
+data1.to_csv("SortedTest.csv", header=True, index= True, sep=',')
