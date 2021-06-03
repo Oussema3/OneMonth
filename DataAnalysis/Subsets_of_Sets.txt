@@ -1,0 +1,12 @@
+When analyzing a data set, you might want to only deal with some portion of the data set. With Pandas, you can easily grab a subset of a set of data. You can, for instance, specify that you want a certain column (or a few columns) and you can even use some functions on the subset to get specific information about the subset, e.g. using max() to get the maximum value in a subset, or mean() to get the average of all values in a subset.
+
+There are many different ways you can pull out specific columns of your data, depending on what you're looking for. But these are some good functions to have in your pocket as you sort through everything:
+
+data['title']
+data[['title', 'year']]
+data['rating'].mean()
+data['rating'].max()
+data['rating'].min()
+data['genres'].unique()
+data['rating'].value_counts()
+data['rating'].value_counts().sort_index()
