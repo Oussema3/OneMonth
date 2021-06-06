@@ -1,0 +1,13 @@
+Now that we've visualized our data, we dig into an ordinary least squares (or OLS) regression. We use the StatsModels library to calculate this. StatsModels provides classes and functions for the estimation of many different statistical models, as well as for conducting statistical tests, and statistical data exploration.
+
+If your interested in calculating stats, there's a library that can help you do that called StatsModels. In this lesson let's work on an ordinary least squares (or OLS) regression. 
+
+Import StatsModels
+import statsmodels.api as sm
+Ordinary Least Square (OSL) Regression
+From there, we can create sm.OLS() and pass in the data we want to check against each other. For instance: 
+
+results = sm.OLS(data["votes"], data["rating"]).fit()
+And then to see the visual representation of those results use:  
+
+results.summary()
