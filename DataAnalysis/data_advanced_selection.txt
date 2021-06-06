@@ -1,0 +1,21 @@
+In this lesson, we go over even more data selection! We look at various ways to get more specific with the data we are working with.
+
+You can get even more specific with the data your working with. For instance, if we wanted to look at all the data from after a particular year, we could specify 
+
+data[data['year'] > 1995]
+How this works under the hood: if we were to only do the inside part, it would only return False/True, and basically just tell you if a film was made before or after 1995. But when you put that inside another data selection, it will only return the true values. 
+
+You can also find films from a particular year by using another one of our boolean friends: 
+
+data[data['year'] == 1966]
+We can also grab a range with 
+
+data[(data['year'] > 1995) & (data['year'] < 2000)]
+Note that the & works for and, and if you want to use an or, you have to use |. But that latter one is less useful because every movie was made either before or after a given year. 
+
+We can get super specific with this. For instance, if we want to know the top 10 rated movies in a given span of years, we can run: 
+
+data[(data['year'] > 1995) & (data['year'] < 2000)].sort_values(by='rating', ascending=False).head(10) 
+That will give us the top rated movies from 1996 through 1999. 
+
+
