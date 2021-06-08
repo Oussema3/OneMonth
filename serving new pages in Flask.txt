@@ -1,0 +1,14 @@
+Now that we have our homepage up and running, it's time to add a second page. Let's call this one "About." In order to get a second-page working, we'll need to update the route, and create a new HTML file.
+
+In this lesson, we set up a second route for our new page "about.html" 
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/")
+def about():
+    return render_template("about.html")
