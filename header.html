@@ -2,7 +2,13 @@
 <html>
 <head>
 	<title>
-	Home Page
+	{% if title == "About Page" %}
+	About Page | Round.com
+	{% elif title == "Contact Page" %}
+	Contact | Round.com
+	{% else %}
+	Round.com
+	{% endif %}
 	</title>
 </head>
 <body>
